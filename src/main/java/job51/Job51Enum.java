@@ -37,6 +37,32 @@ public class Job51Enum {
 
     }
 
+
+    @Getter
+    public enum Degree {
+        NULL("不限", "0"),
+        JUNIOR_COLLEGE("大专", "03"),
+        BACHELOR("本科", "04");
+
+        private final String name;
+        private final String code;
+
+        Degree(String name, String code) {
+            this.name = name;
+            this.code = code;
+        }
+
+        @JsonCreator
+        public static Degree forValue(String value) {
+            for (Degree degree : Degree.values()) {
+                if (degree.name.equals(value)) {
+                    return degree;
+                }
+            }
+            return NULL;
+        }
+    }
+
     //
     @Getter
     public enum Industry {
@@ -44,7 +70,8 @@ public class Job51Enum {
         INTERNET("计算机硬件", "37"),
         COMPUTER_SOFTWARE("计算机软件", "01"),
         COMPUTER_FUWU("计算机服务", "38"),
-        COMPUTER_TX("通信", "39"),
+        COMPUTER_TX("电信运营", "39"),
+        COMPUTER_TX2("网络设备", "31"),
         CLOUD_COMPUTING("互联网", "32");
 
         private final String name;

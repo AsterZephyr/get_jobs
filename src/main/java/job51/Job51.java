@@ -54,6 +54,7 @@ public class Job51 {
         return baseUrl +
                 JobUtils.appendListParam("jobArea", config.getJobArea()) +
                 JobUtils.appendListParam("salary", config.getSalary()) +
+                JobUtils.appendListParam("degree", config.getDegree()) +
                 JobUtils.appendListParam("industry", config.getIndustry()) +
                 JobUtils.appendListParam("workYear", config.getWorkYear());
     }

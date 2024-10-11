@@ -255,11 +255,11 @@ public class Boss {
                 // 排除黑名单岗位
                 continue;
             }
-//            String companyName = jobCard.findElement(By.cssSelector("div.company-info h3.company-name")).getText();
-//            if (blackCompanies.stream().anyMatch(companyName::contains)) {
-//                // 排除黑名单公司
-//                continue;
-//            }
+            String companyName = jobCard.findElement(By.cssSelector("div.company-info h3.company-name")).getText();
+            if (blackCompanies.stream().anyMatch(companyName::contains)) {
+                // 排除黑名单公司
+                continue;
+            }
             Job job = new Job();
             job.setRecruiter(recruiterText.replace(recruiterName, "") + ":" + recruiterName);
             job.setHref(jobCard.findElement(By.cssSelector("a")).getAttribute("href"));

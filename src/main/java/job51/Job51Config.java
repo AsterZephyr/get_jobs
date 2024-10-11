@@ -1,5 +1,6 @@
 package job51;
 
+import boss.BossEnum;
 import lombok.Data;
 import lombok.SneakyThrows;
 import utils.JobUtils;
@@ -26,10 +27,9 @@ public class Job51Config {
      */
     private List<String> salary;
 
-
     private List<String> workYear;
     private List<String> industry;
-
+    private List<String> degree;
 
     @SneakyThrows
     public static Job51Config init() {
@@ -41,6 +41,7 @@ public class Job51Config {
         config.setSalary(config.getSalary().stream().map(value -> Job51Enum.Salary.forValue(value).getCode()).collect(Collectors.toList()));
         // 转换薪资范围
         config.setWorkYear(config.getWorkYear().stream().map(value -> Job51Enum.WorkYear.forValue(value).getCode()).collect(Collectors.toList()));
+        config.setDegree(config.getDegree().stream().map(value -> Job51Enum.Degree.forValue(value).getCode()).collect(Collectors.toList()));
         return config;
     }
 
