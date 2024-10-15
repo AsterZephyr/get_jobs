@@ -146,13 +146,14 @@ public class Boss {
                     boolean match = message.contains("不") || message.contains("感谢") || message.contains("但") || message.contains("遗憾") || message.contains("需要本") || message.contains("对不");
                     boolean nomatch = message.contains("不是") || message.contains("不生");
                     if (match && !nomatch) {
-                        //log.info("黑名单公司：【{}】，信息：【{}】", companyName, message);
+                        log.info("黑名单公司：【{}】，信息：【{}】", companyName, message);
                         if (blackCompanies.stream().anyMatch(companyName::contains)) {
                             continue;
                         }
                         companyName = companyName.replaceAll("\\.{3}", "");
                         if (companyName.matches(".*(\\p{IsHan}{2,}|[a-zA-Z]{4,}).*")) {
-                            //blackCompanies.add(companyName);
+                            //标记
+                            blackCompanies.add(companyName);
                         }
                     }
                 } catch (Exception e) {
@@ -351,7 +352,7 @@ public class Boss {
                     returnList.add(job);
                     noJobPages = 0;
                 } catch (Exception e) {
-                    //log.error("发送消息失败:{}", e.getMessage(), e);
+                   //log.error("发送消息失败:{}", e.getMessage(), e);
                 }
             }
             SeleniumUtil.sleep(1);
