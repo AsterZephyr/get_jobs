@@ -1,17 +1,15 @@
 <h1 align="center">🍀Get Jobs【工作无忧】</h1>
 <div align="center">
 
-[![Stars](https://img.shields.io/github/stars/loks666/get_jobs?style=flat&label=%F0%9F%8C%9Fstars&labelColor=ff4f4f&color=ff8383)](https://github.com/loks666/get_jobs)
-[![QQ交流群](https://img.shields.io/badge/🐧QQ交流群-get_jobs-0FB5EB?labelColor=235389&logoColor=white&style=flat)](https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=BV_WjeFlg3s--MePsk0OyBXMWH0tK5DR&authKey=lyaZwh50DkD8wrpM2A9BCXzutG3O4gK0mTwm6ODk9EBij/FNZAHGBT05KmLgLTG/BL&noverify=0&group_code=219885606)
-[![License](https://img.shields.io/badge/📑licenses-MIT-34D058?labelColor=22863A&style=flat)](https://github.com/loks666/get_jobs/blob/master/LICENSE)
-[![Issues closed](https://img.shields.io/github/issues-search?query=repo%3Aloks666/Fget_jobs/0is%3Aclosed&label=%F0%9F%A4%8F%F0%9F%8F%BBFissues/0closed&labelColor=008B8B&color=00CCCC)](https://github.com/loks666/get_jobs/issues?q=is%3Aissue+is%3Aclosed)
-[![Forks](https://img.shields.io/github/forks/loks666/get_jobs?style=flat&label=%F0%9F%8F%85Forks&labelColor=800080&color=912CEE)](https://github.com/loks666/get_jobs/forks)
+[![Stars](https://img.shields.io/github/stars/AsterZephyr/get_jobs?style=flat&label=%F0%9F%8C%9Fstars&labelColor=ff4f4f&color=ff8383)](https://github.com/AsterZephyr/get_jobs)
+[![License](https://img.shields.io/badge/📑licenses-MIT-34D058?labelColor=22863A&style=flat)](https://github.com/AsterZephyr/get_jobs/blob/master/LICENSE)
+[![Issues closed](https://img.shields.io/github/issues-search?query=repo%3AAsterZephyr/get_jobs/0is%3Aclosed&label=%F0%9F%A4%8F%F0%9F%8F%BBFissues/0closed&labelColor=008B8B&color=00CCCC)](https://github.com/AsterZephyr/get_jobs/issues?q=is%3Aissue+is%3Aclosed)
+[![Forks](https://img.shields.io/github/forks/AsterZephyr/get_jobs?style=flat&label=%F0%9F%8F%85Forks&labelColor=800080&color=912CEE)](https://github.com/AsterZephyr/get_jobs/forks)
 </div>
 
 ### 🌴源码地址
 
-- Github(国外访问)：https://github.com/loks666/get_jobs
-- Gitee·码云(中国大陆)：https://gitee.com/lok666/get_jobs
+- Github：https://github.com/AsterZephyr/get_jobs
 
 ### 🌞 特色功能
 
@@ -23,14 +21,12 @@
 - 内置xpathHelper插件，方便快速定位元素
 - Boss默认过滤猎头岗位，可修改代码自定义修改条件
 - Boss自动更新黑名单企业，避免重复投递
-- QQ交流群暗號：get_jobs
 
 ### 🔞️ 注意事项
 
 - ❌必须要关闭墙外代理，由于主要针对的国内平台，墙外代理会导致页面加载缓慢
-- 💪🏻如你有“折腾精神”希望自己配置，QQ群内提供免费答疑，如你不想麻烦，可联系群主付费部署
+- 💪🏻如你有"折腾精神"希望自己配置，如你不想麻烦，可联系作者部署
 - 📰由于不同系统的页面不一样，导致可能不兼容，文末会给出文档，尽可能让大家能自定义修改
-- 🚩如您不方便访问github，可使用码云镜像(中国大陆)版本：[gitee/getjobs](https://gitee.com/loks666/get_jobs)
 
 > 已经有人在交流群里 **发广告** 等与本项目无关的信息  
 > 如果带着不同目的或者没想清楚就进群的  
@@ -42,7 +38,7 @@
 ### 1️⃣ 使用git拉取代码
 
 ```
-git clone https://github.com/loks666/get_jobs.git
+git clone https://github.com/AsterZephyr/get_jobs.git
 cd get_jobs
 ```
 
@@ -58,7 +54,7 @@ cd get_jobs
   】后使用
 - 如果你是linux系统，需要解压【[chromedriver-linux64.zip](src/main/resources/chromedriver-linux64.zip)】后使用
 
-更多环境配置详情请点击：📚 [环境配置](https://github.com/loks666/get_jobs/wiki/环境配置)
+更多环境配置详情请点击：📚 [环境配置](https://github.com/AsterZephyr/get_jobs/wiki/环境配置)
 
 ### 3️⃣ 修改配置文件(一般默认即可,需要修改自己的地区和岗位)
 
@@ -175,26 +171,17 @@ cd get_jobs
 
 ## 📧 联系方式
 
-- V2VDaGF0OkFpckVsaWF1azk1Mjcs6K+35aSH5rOo77ya5pq06aOO6Zuo5bCx6KaB5p2l5LqG
-- 如果微信群链接失效，请添加上面的微信，或者进入QQ群联系
+- 如果需要帮助，请提交issue或联系作者
 
-## 👨🏻‍🔧 QQ群
-
-- 扫码添加：QQ加群答案为本项目仓库名【get_jobs】
-
-<div style="display: flex;">
-    <img src="src/main/resources/images/qq.jpg" alt="qq群" height="600">
-    <img src="src/main/resources/images/wgroup.jpg" alt="微信群" height="600">
-
-</div>
+## 👨🏻‍🔧 
 
 > 点击下面的链接可直接加群
 
-[![][qq-shield-badge]][qq-link]
+[![][pr-welcome-shield]][pr-welcome-link]
 
 ## 🚩 付费部署
 
-> 本项目文档已相对完善，如仍需付费部署，请添加QQ群或微信联系群主
+> 本项目文档已相对完善，如仍需付费部署，请联系作者
 
 - 如果你不想进行繁琐的配置：希望全部代部署：200/次
 - 如果你可以自己下载环境部署的的各种软件(IDEA，Maven，Java，Git)，只是希望帮忙配置环境运行：¥100/次
@@ -202,7 +189,7 @@ cd get_jobs
 - 请注意：
     1. 付费部署是包含配置环境后，每一个平台运行正常，但配置文件等岗位信息，需要自行修改，定制修改不包含部署范围内。
     2. 本项目不支持服务器部署，无须尝试，如招聘网站发现访问者为服务器IP，不会返回任何网站数据。
-    3. 在开发与部署过程有任何问题都可在群内沟通，如您需要远程调试，会根据问题的复杂性收取一定费用，一般¥100起。
+    3. 在开发与部署过程有任何问题都可联系作者，如您需要远程调试，会根据问题的复杂性收取一定费用，一般¥100起。
 
 --- 
 
@@ -228,8 +215,8 @@ cd get_jobs
 
 我们非常欢迎各种形式的贡献  
 如果你对贡献代码感兴趣  
-可以查看我们的 [Issues](https://github.com/loks666/get_jobs/issues)
-和 [discussions](https://github.com/loks666/get_jobs/discussions)  
+可以查看我们的 [Issues](https://github.com/AsterZephyr/get_jobs/issues)
+和 [discussions](https://github.com/AsterZephyr/get_jobs/discussions)  
 期待你的大展身手，向我们展示你的奇思妙想。
 
 - 提交Pr流程：
@@ -251,7 +238,7 @@ cd get_jobs
 
 --- 
 
-- 授人以渔: [自定义修改你的代码](https://github.com/loks666/get_jobs/wiki/授人以渔‐自定义修改你的代码)
+- 授人以渔: [自定义修改你的代码](https://github.com/AsterZephyr/get_jobs/wiki/授人以渔‐自定义修改你的代码)
 - 本项目受此启发:https://github.com/BeammNotFound/get-jobs-51job , 感谢大佬，让我们将爱传递下去~
 
 ---
@@ -264,11 +251,7 @@ cd get_jobs
 
 <!-- [![][fossa-license-shield]][fossa-license-link] -->
 
-[qq-link]: https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=BV_WjeFlg3s--MePsk0OyBXMWH0tK5DR&authKey=lyaZwh50DkD8wrpM2A9BCXzutG3O4gK0mTwm6ODk9EBij/FNZAHGBT05KmLgLTG/BL&noverify=0&group_code=219885606
-
-[qq-shield-badge]: https://img.shields.io/badge/QQ交流群-get_jobs-0FB5EB?labelColor=235389&logo=tencent-qq&logoColor=white&style=flat
-
-[pr-welcome-link]: https://github.com/loks666/get_jobs/pulls
+[pr-welcome-link]: https://github.com/AsterZephyr/get_jobs/pulls
 
 [pr-welcome-shield]: https://img.shields.io/badge/🤯_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
 
