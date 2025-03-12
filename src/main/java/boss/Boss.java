@@ -70,6 +70,7 @@ public class Boss {
                 log.info("投递【{}】关键词第【{}】页", keyword, page);
                 String url = searchUrl + "&page=" + page;
                 int startSize = returnList.size();
+                SeleniumUtil.sleep(2);
                 Integer resultSize = resumeSubmission(url, keyword);
                 if (resultSize == -1) {
                     log.info("今日沟通人数已达上限，请明天再试");
@@ -177,6 +178,7 @@ public class Boss {
             } else {
                 try {
                     js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+                    SeleniumUtil.sleep(2);
                 } catch (Exception e) {
                     log.error("滚动到页面底部出错", e);
                 }
@@ -279,10 +281,11 @@ public class Boss {
             // 打开新的标签页并打开链接
             JavascriptExecutor jse = CHROME_DRIVER;
             jse.executeScript("window.open(arguments[0], '_blank')", job.getHref());
-
+            SeleniumUtil.sleep(2);
             // 切换到新的标签页
             ArrayList<String> tabs = new ArrayList<>(CHROME_DRIVER.getWindowHandles());
             CHROME_DRIVER.switchTo().window(tabs.get(tabs.size() - 1));
+            SeleniumUtil.sleep(2);
             try {
                 WAIT.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='btn btn-startchat']")));
             } catch (Exception e) {
@@ -295,6 +298,7 @@ public class Boss {
             WebElement btn = CHROME_DRIVER.findElement(By.cssSelector("[class*='btn btn-startchat']"));
             if ("立即沟通".equals(btn.getText())) {
                 btn.click();
+                SeleniumUtil.sleep(3);
                 if (isLimit()) {
                     SeleniumUtil.sleep(1);
                     return -1;
@@ -308,9 +312,9 @@ public class Boss {
                         btn.click();
                     } catch (Exception ignore) {
                     }
-//                    WebElement input = WAIT.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='chat-input']")));
-//                    input.click();
-                    SeleniumUtil.sleep(1);
+                    WebElement input = WAIT.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='chat-input']")));
+                    input.click();
+                    SeleniumUtil.sleep(2);
                     try {
                         // 是否出现不匹配的对话框
                         WebElement element = CHROME_DRIVER.findElement(By.xpath("//div[@class='dialog-container']"));
@@ -322,9 +326,10 @@ public class Boss {
                     } catch (Exception e) {
                         log.debug("岗位匹配，下一步发送消息...");
                     }
-//                    input.sendKeys(config.getSayHi());
-//                    WebElement send = WAIT.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@type='send']")));
-//                    send.click();
+                    input.sendKeys(config.getSayHi());
+                    WebElement send = WAIT.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@type='send']")));
+                    send.click();
+                    SeleniumUtil.sleep(3);
 
                     WebElement recruiterNameElement = CHROME_DRIVER.findElement(By.xpath("//p[@class='base-info fl']/span[@class='name']"));
                     WebElement recruiterTitleElement = CHROME_DRIVER.findElement(By.xpath("//p[@class='base-info fl']/span[@class='base-title']"));
@@ -412,6 +417,7 @@ public class Boss {
     private static void login() {
         log.info("打开Boss直聘网站中...");
         CHROME_DRIVER.get(homeUrl);
+        SeleniumUtil.sleep(2);
         if (SeleniumUtil.isCookieValid(cookiePath)) {
             SeleniumUtil.loadCookie(cookiePath);
             CHROME_DRIVER.navigate().refresh();
