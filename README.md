@@ -179,19 +179,12 @@ cd get_jobs
 
 [![][pr-welcome-shield]][pr-welcome-link]
 
-## 🚩 付费部署
+## 🚩 
 
-> 本项目文档已相对完善，如仍需付费部署，请联系作者
+- 授人以渔: [自定义修改你的代码](https://github.com/AsterZephyr/get_jobs/wiki/授人以渔‐自定义修改你的代码)
+- 本项目受此启发:https://github.com/BeammNotFound/get-jobs-51job , 感谢大佬，让我们将爱传递下去~
 
-- 如果你不想进行繁琐的配置：希望全部代部署：200/次
-- 如果你可以自己下载环境部署的的各种软件(IDEA，Maven，Java，Git)，只是希望帮忙配置环境运行：¥100/次
-- 如需定制化修改请联系商议
-- 请注意：
-    1. 付费部署是包含配置环境后，每一个平台运行正常，但配置文件等岗位信息，需要自行修改，定制修改不包含部署范围内。
-    2. 本项目不支持服务器部署，无须尝试，如招聘网站发现访问者为服务器IP，不会返回任何网站数据。
-    3. 在开发与部署过程有任何问题都可联系作者，如您需要远程调试，会根据问题的复杂性收取一定费用，一般¥100起。
-
---- 
+---
 
 ## 📑 更新日志
 
@@ -240,21 +233,3 @@ cd get_jobs
 
 - 授人以渔: [自定义修改你的代码](https://github.com/AsterZephyr/get_jobs/wiki/授人以渔‐自定义修改你的代码)
 - 本项目受此启发:https://github.com/BeammNotFound/get-jobs-51job , 感谢大佬，让我们将爱传递下去~
-
----
-
-## ☕️ 请我喝杯咖啡
-
-<img src="src/main/resources/images/aliPay.jpg" alt="支付宝付款码" height="500"> <img src="src/main/resources/images/wechatPay.jpg" alt="微信付款码" height="500">
-
-<!-- LINK GROUP -->
-
-<!-- [![][fossa-license-shield]][fossa-license-link] -->
-
-[pr-welcome-link]: https://github.com/AsterZephyr/get_jobs/pulls
-
-[pr-welcome-shield]: https://img.shields.io/badge/🤯_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
-
-[fossa-license-shield]: https://app.fossa.com/api/projects/git/Bgithub.com/Floks666/Fget_jobs.svg?type=shield
-
-[fossa-license-link]: https://app.fossa.com/projects/git/Bgithub.com/Floks666/Fget_jobs?ref=badge_shield
